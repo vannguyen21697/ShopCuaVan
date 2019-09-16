@@ -8,25 +8,27 @@ import Menu from './Menu';
 import Shop from './Shop/Shop';
 
 
+
 export default class Main extends Component {
-    closeControlPanel=()=>{
-        this.drawer.close();
-    };
-    openControlPanel=()=>{
-        this.drawer.open();
-    }
+    // closeControlPanel=()=>{
+    //     this.drawer.close();
+    // };
+    // openControlPanel=()=>{
+    //     this.drawer.open();
+    // }
 
     render() {
-        return (
-            <Drawer
-            ref={(ref)=>{this.drawer=ref}}
-            content={<Menu />}
-            openDrawerOffset={0.4}
-            tapToClose={true}
-            >
+        return(            // <Drawer
+            // ref={(ref)=>{this.drawer=ref}}
+            // content={<Menu />}
+            // openDrawerOffset={0.4}
+            // tapToClose={true}
+            // >
                 
-                <Shop open={this.openControlPanel.bind(this)}/>
-            </Drawer>
+            //     <Shop open={this.openControlPanel.bind(this)}/>
+            // </Drawer>rn (
+                <Shop/>
+
 
         )
     }

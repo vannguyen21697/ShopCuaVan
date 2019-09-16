@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-<View>menu</View>
 import { Text,View } from 'react-native';
-class Menu extends Component {
+export default  class Menu extends Component {
+    static navigationOptions = {
+        title: 'menu',}
     render() {
         return (
             <View><Text>Menu</Text></View>
         );
     }
 }
-
-export default Menu;
